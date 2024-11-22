@@ -1,0 +1,14 @@
+C:\Users\raguz\source\repos\dz1-1\dz1-1\bin\Debug\net8.0\dz1-1.exe
+C:\Users\raguz\source\repos\dz1-1\dz1-1\bin\Debug\net8.0\dz1-1.deps.json
+C:\Users\raguz\source\repos\dz1-1\dz1-1\bin\Debug\net8.0\dz1-1.runtimeconfig.json
+C:\Users\raguz\source\repos\dz1-1\dz1-1\bin\Debug\net8.0\dz1-1.dll
+C:\Users\raguz\source\repos\dz1-1\dz1-1\bin\Debug\net8.0\dz1-1.pdb
+C:\Users\raguz\source\repos\dz1-1\dz1-1\obj\Debug\net8.0\dz1-1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raguz\source\repos\dz1-1\dz1-1\obj\Debug\net8.0\dz1-1.AssemblyInfoInputs.cache
+C:\Users\raguz\source\repos\dz1-1\dz1-1\obj\Debug\net8.0\dz1-1.AssemblyInfo.cs
+C:\Users\raguz\source\repos\dz1-1\dz1-1\obj\Debug\net8.0\dz1-1.csproj.CoreCompileInputs.cache
+C:\Users\raguz\source\repos\dz1-1\dz1-1\obj\Debug\net8.0\dz1-1.dll
+C:\Users\raguz\source\repos\dz1-1\dz1-1\obj\Debug\net8.0\refint\dz1-1.dll
+C:\Users\raguz\source\repos\dz1-1\dz1-1\obj\Debug\net8.0\dz1-1.pdb
+C:\Users\raguz\source\repos\dz1-1\dz1-1\obj\Debug\net8.0\dz1-1.genruntimeconfig.cache
+C:\Users\raguz\source\repos\dz1-1\dz1-1\obj\Debug\net8.0\ref\dz1-1.dll
