@@ -1,0 +1,14 @@
+C:\Users\raguz\source\repos\kdz-3\kdz-3\bin\Debug\net8.0\kdz-3.exe
+C:\Users\raguz\source\repos\kdz-3\kdz-3\bin\Debug\net8.0\kdz-3.deps.json
+C:\Users\raguz\source\repos\kdz-3\kdz-3\bin\Debug\net8.0\kdz-3.runtimeconfig.json
+C:\Users\raguz\source\repos\kdz-3\kdz-3\bin\Debug\net8.0\kdz-3.dll
+C:\Users\raguz\source\repos\kdz-3\kdz-3\bin\Debug\net8.0\kdz-3.pdb
+C:\Users\raguz\source\repos\kdz-3\kdz-3\obj\Debug\net8.0\kdz-3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raguz\source\repos\kdz-3\kdz-3\obj\Debug\net8.0\kdz-3.AssemblyInfoInputs.cache
+C:\Users\raguz\source\repos\kdz-3\kdz-3\obj\Debug\net8.0\kdz-3.AssemblyInfo.cs
+C:\Users\raguz\source\repos\kdz-3\kdz-3\obj\Debug\net8.0\kdz-3.csproj.CoreCompileInputs.cache
+C:\Users\raguz\source\repos\kdz-3\kdz-3\obj\Debug\net8.0\kdz-3.dll
+C:\Users\raguz\source\repos\kdz-3\kdz-3\obj\Debug\net8.0\refint\kdz-3.dll
+C:\Users\raguz\source\repos\kdz-3\kdz-3\obj\Debug\net8.0\kdz-3.pdb
+C:\Users\raguz\source\repos\kdz-3\kdz-3\obj\Debug\net8.0\kdz-3.genruntimeconfig.cache
+C:\Users\raguz\source\repos\kdz-3\kdz-3\obj\Debug\net8.0\ref\kdz-3.dll
