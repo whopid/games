@@ -1,0 +1,14 @@
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\obj\Debug\net8.0\Zadanie_1-3.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\obj\Debug\net8.0\Zadanie_1-3.AssemblyInfoInputs.cache
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\obj\Debug\net8.0\Zadanie_1-3.AssemblyInfo.cs
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\obj\Debug\net8.0\Zadanie_1-3.csproj.CoreCompileInputs.cache
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\bin\Debug\net8.0\Zadanie_1-3.exe
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\bin\Debug\net8.0\Zadanie_1-3.deps.json
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\bin\Debug\net8.0\Zadanie_1-3.runtimeconfig.json
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\bin\Debug\net8.0\Zadanie_1-3.dll
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\bin\Debug\net8.0\Zadanie_1-3.pdb
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\obj\Debug\net8.0\Zadanie_1-3.dll
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\obj\Debug\net8.0\refint\Zadanie_1-3.dll
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\obj\Debug\net8.0\Zadanie_1-3.pdb
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\obj\Debug\net8.0\Zadanie_1-3.genruntimeconfig.cache
+C:\Users\raguz\source\repos\Zadanie_1-3\Zadanie_1-3\obj\Debug\net8.0\ref\Zadanie_1-3.dll

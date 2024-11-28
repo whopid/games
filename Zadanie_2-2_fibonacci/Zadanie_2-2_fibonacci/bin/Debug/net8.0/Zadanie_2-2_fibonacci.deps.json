@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Zadanie_2-2_fibonacci/1.0.0": {
+        "runtime": {
+          "Zadanie_2-2_fibonacci.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Zadanie_2-2_fibonacci/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

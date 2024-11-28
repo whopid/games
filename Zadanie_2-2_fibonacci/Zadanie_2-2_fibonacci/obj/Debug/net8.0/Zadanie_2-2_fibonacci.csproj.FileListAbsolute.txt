@@ -1,0 +1,14 @@
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\bin\Debug\net8.0\Zadanie_2-2_fibonacci.exe
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\bin\Debug\net8.0\Zadanie_2-2_fibonacci.deps.json
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\bin\Debug\net8.0\Zadanie_2-2_fibonacci.runtimeconfig.json
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\bin\Debug\net8.0\Zadanie_2-2_fibonacci.dll
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\bin\Debug\net8.0\Zadanie_2-2_fibonacci.pdb
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\obj\Debug\net8.0\Zadanie_2-2_fibonacci.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\obj\Debug\net8.0\Zadanie_2-2_fibonacci.AssemblyInfoInputs.cache
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\obj\Debug\net8.0\Zadanie_2-2_fibonacci.AssemblyInfo.cs
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\obj\Debug\net8.0\Zadanie_2-2_fibonacci.csproj.CoreCompileInputs.cache
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\obj\Debug\net8.0\Zadanie_2-2_fibonacci.dll
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\obj\Debug\net8.0\refint\Zadanie_2-2_fibonacci.dll
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\obj\Debug\net8.0\Zadanie_2-2_fibonacci.pdb
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\obj\Debug\net8.0\Zadanie_2-2_fibonacci.genruntimeconfig.cache
+C:\Users\raguz\source\repos\Zadanie_2-2_fibonacci\Zadanie_2-2_fibonacci\obj\Debug\net8.0\ref\Zadanie_2-2_fibonacci.dll
