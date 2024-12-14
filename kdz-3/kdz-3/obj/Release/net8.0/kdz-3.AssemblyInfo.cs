@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("kdz-3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bf90a32a82388874a4c083e23f489388fe45d29c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+95d7644622abf6a769fe08cb61dd843236f7143c")]
 [assembly: System.Reflection.AssemblyProductAttribute("kdz-3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("kdz-3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

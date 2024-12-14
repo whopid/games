@@ -1,0 +1,14 @@
+C:\Users\raguz\source\repos\kdz7\kdz7\obj\Debug\net8.0\kdz7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\raguz\source\repos\kdz7\kdz7\obj\Debug\net8.0\kdz7.AssemblyInfoInputs.cache
+C:\Users\raguz\source\repos\kdz7\kdz7\obj\Debug\net8.0\kdz7.AssemblyInfo.cs
+C:\Users\raguz\source\repos\kdz7\kdz7\obj\Debug\net8.0\kdz7.csproj.CoreCompileInputs.cache
+C:\Users\raguz\source\repos\kdz7\kdz7\bin\Debug\net8.0\kdz7.exe
+C:\Users\raguz\source\repos\kdz7\kdz7\bin\Debug\net8.0\kdz7.deps.json
+C:\Users\raguz\source\repos\kdz7\kdz7\bin\Debug\net8.0\kdz7.runtimeconfig.json
+C:\Users\raguz\source\repos\kdz7\kdz7\bin\Debug\net8.0\kdz7.dll
+C:\Users\raguz\source\repos\kdz7\kdz7\bin\Debug\net8.0\kdz7.pdb
+C:\Users\raguz\source\repos\kdz7\kdz7\obj\Debug\net8.0\kdz7.dll
+C:\Users\raguz\source\repos\kdz7\kdz7\obj\Debug\net8.0\refint\kdz7.dll
+C:\Users\raguz\source\repos\kdz7\kdz7\obj\Debug\net8.0\kdz7.pdb
+C:\Users\raguz\source\repos\kdz7\kdz7\obj\Debug\net8.0\kdz7.genruntimeconfig.cache
+C:\Users\raguz\source\repos\kdz7\kdz7\obj\Debug\net8.0\ref\kdz7.dll

@@ -1,117 +1,171 @@
 ﻿using System;
 
-public class StonePusherGame
+public class Game
 {
-    private const int FIELD_SIZE = 10;
-    private char[,] field;
-    private int playerX, playerY;
+    private char[,] gameField;
+    private int playerY, playerX;
+    private int activatedPlatesCount;
 
-    public StonePusherGame()
+    public Game()
     {
-        // Инициализация игрового поля (уровень)
-        field = new char[FIELD_SIZE, FIELD_SIZE]
+        gameField = new char[10, 10];
+        activatedPlatesCount = 0;
+        InitializeField();
+    }
+
+    private void InitializeField()
+    {
+        // Заполнение поля символами
+        for (int i = 0; i < 10; i++)
         {
-            {'#','#','#','#','#','#','#','#','#','#'},
-            {'#',' ',' ',' ',' ',' ',' ',' ',' ','#'},
-            {'#',' ','R',' ',' ',' ',' ',' ',' ','#'},
-            {'#',' ',' ',' ',' ',' ',' ','T',' ','#'},
-            {'#',' ',' ',' ',' ',' ',' ',' ',' ','#'},
-            {'#',' ',' ',' ','O',' ',' ',' ',' ','#'},
-            {'#',' ',' ',' ',' ',' ',' ',' ',' ','#'},
-            {'#',' ',' ',' ',' ',' ',' ',' ','R','#'},
-            {'#',' ',' ',' ',' ',' ',' ',' ',' ','#'},
-            {'#','#','#','#','#','#','#','#','#','#'}
-        };
-        playerX = 1;
-        playerY = 1;
-        field[playerY, playerX] = 'C';
+            for (int j = 0; j < 10; j++)
+            {
+                gameField[i, j] = '#'; // Трава по умолчанию
+            }
+        }
+
+        // Размещение объектов
+        gameField[1, 1] = 'R'; 
+        gameField[2, 2] = 'T'; 
+        gameField[3, 3] = 'O'; 
+        gameField[4, 4] = 'O'; 
+        gameField[5, 5] = 'R'; 
+        gameField[6, 6] = 'O'; 
+        gameField[8, 8] = 'C'; 
+        playerX = 8;
+        playerY = 8;
     }
 
     public void Run()
     {
         while (true)
         {
-            PrintField();
-            Console.WriteLine("Введите направление (w-вверх, s-вниз, a-влево, d-вправо) или q-выйти:");
-            string input = Console.ReadLine().ToLower();
-            if (input == "q") break;
-
-            int dx = 0, dy = 0;
-            switch (input)
-            {
-                case "w": dy = -1; break;
-                case "s": dy = 1; break;
-                case "a": dx = -1; break;
-                case "d": dx = 1; break;
-                default: Console.WriteLine("Некорректный ввод."); continue;
-            }
-
-            Move(dx, dy);
-            if (IsWin())
-            {
-                Console.WriteLine("Поздравляю! Вы победили!");
-                break;
-            }
+            Render();
+            GetInput();
+            CheckWinCondition();
         }
     }
 
-    private void Move(int dx, int dy)
-    {
-        int newX = playerX + dx;
-        int newY = playerY + dy;
-
-        if (newX < 0 || newX >= FIELD_SIZE || newY < 0 || newY >= FIELD_SIZE ||
-            field[newY, newX] == '#' || field[newY, newX] == 'T')
-        {
-            return; // Столкновение
-        }
-
-        if (field[newY, newX] == 'R') // Толкаем камень
-        {
-            int stoneX = newX + dx;
-            int stoneY = newY + dy;
-            if (stoneX < 0 || stoneX >= FIELD_SIZE || stoneY < 0 || stoneY >= FIELD_SIZE ||
-                field[stoneY, stoneX] == '#' || field[stoneY, stoneX] == 'T' || field[stoneY, stoneX] == 'R')
-            {
-                return; // Столкновение камня
-            }
-            field[newY, newX] = ' ';
-            field[stoneY, stoneX] = 'R';
-        }
-        field[playerY, playerX] = (field[playerY, playerX] == 'C') ? ' ' : 'O'; // Если плита была активирована - восстанавливаем
-        playerX = newX;
-        playerY = newY;
-        field[playerY, playerX] = 'C';
-    }
-
-    private bool IsWin()
-    {
-        for (int y = 0; y < FIELD_SIZE; y++)
-        {
-            for (int x = 0; x < FIELD_SIZE; x++)
-            {
-                if (field[y, x] == 'O') return false;
-            }
-        }
-        return true;
-    }
-
-    private void PrintField()
+    private void Render()
     {
         Console.Clear();
-        for (int y = 0; y < FIELD_SIZE; y++)
+        for (int i = 0; i < 10; i++)
         {
-            for (int x = 0; x < FIELD_SIZE; x++)
+            for (int j = 0; j < 10; j++)
             {
-                Console.Write(field[y, x]);
+                Console.Write(gameField[i, j]);
             }
             Console.WriteLine();
         }
+        Console.WriteLine($"Активированные плиты: {activatedPlatesCount}");
     }
 
+    private void GetInput()
+    {
+        ConsoleKeyInfo key = Console.ReadKey();
+        int newX = playerX;
+        int newY = playerY;
+
+        switch (key.Key)
+        {
+            case ConsoleKey.W: newY--; break;
+            case ConsoleKey.S: newY++; break;
+            case ConsoleKey.A: newX--; break;
+            case ConsoleKey.D: newX++; break;
+        }
+
+        MovePlayer(newX, newY);
+    }
+
+    private void MovePlayer(int newX, int newY)
+    {
+        if (newX >= 0 && newX < 10 && newY >= 0 && newY < 10)
+        {
+            char targetCell = gameField[newY, newX];
+
+            if (targetCell == 'R')
+            {
+                MoveRock(newX, newY);
+            }
+            else if (targetCell == '#')
+            {
+                gameField[playerY, playerX] = '#';
+                playerX = newX;
+                playerY = newY;
+                gameField[playerY, playerX] = 'C';
+            }
+            else if (targetCell == 'O')
+            {
+                ActivatePlate(newX, newY);
+            }
+            else if (targetCell == 'T')
+            {
+                // Ничего не делаем, если это дерево
+            }
+        }
+    }
+
+    private void ActivatePlate(int newX, int newY)
+    {
+        gameField[playerY, playerX] = '#';
+        playerX = newX;
+        playerY = newY;
+        gameField[playerY, playerX] = 'C';
+        activatedPlatesCount++;
+        Console.WriteLine("Плита активирована!");
+    }
+
+    private void MoveRock(int newX, int newY)
+    {
+        int dx = newX - playerX;
+        int dy = newY - playerY;
+
+        int rockNewX = newX + dx;
+        int rockNewY = newY + dy;
+
+        if (rockNewX >= 0 && rockNewX < 10 && rockNewY >= 0 && rockNewY < 10)
+        {
+            char cellBehindRock = gameField[rockNewY, rockNewX];
+            if (cellBehindRock == '#' || cellBehindRock == 'O')
+            {
+                if (cellBehindRock == '#')
+                {
+                    gameField[playerY, playerX] = '#';
+                    gameField[newY, newX] = 'C';
+                    gameField[rockNewY, rockNewX] = 'R';
+                    playerX = newX;
+                    playerY = newY;
+                }
+                else
+                {
+                    gameField[playerY, playerX] = '#';
+                    gameField[newY, newX] = 'C';
+                    gameField[rockNewY, rockNewX] = 'Ⓡ';
+                    playerX = newX;
+                    playerY = newY;
+                    activatedPlatesCount++;
+                    Console.WriteLine("Плита активирована!");
+                }
+            }
+        }
+    }
+
+    private void CheckWinCondition()
+    {
+        if (activatedPlatesCount >= 3) // Условие выигрыша
+        {
+            Console.Clear();
+            Console.WriteLine("Поздравляем! Вы активировали все плиты и выиграли!");
+            Environment.Exit(0); // Завершение игры
+        }
+    }
+}
+
+public class Program
+{
     public static void Main(string[] args)
     {
-        StonePusherGame game = new StonePusherGame();
+        Game game = new Game();
         game.Run();
     }
 }
